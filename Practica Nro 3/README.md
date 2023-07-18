@@ -1,0 +1,2 @@
+# Ejercicio Integrador
+En este ejercicio, implemente un dispositivo llamado "Carga Electronica". La misma es simplemente un circuito electrico que contiene un microcontrolador Atmega328, el cual permite extraer una corriente especifica de alguna fuente de tension que se desea probar.
