@@ -2,7 +2,7 @@
 En este ejercicio, implemente un dispositivo llamado "Carga Electronica". La misma es simplemente un circuito electrico que contiene un microcontrolador Atmega328, el cual permite extraer una corriente especifica de alguna fuente de tension que se desea probar.
 
 ## Esquematico
-![Esquematico](https://github.com/christian-herrera/Arq-Computadores/tree/main/Practica%20Nro%203/Docs/Esquematico.svg)
+![Esquematico](https://raw.githubusercontent.com/christian-herrera/Arq-Computadores/main/Practica%20Nro%203/docs/Esquematico.svg)
 
 El objetivo es lograr una tension fija en el terminal superior de la resistencia Shunt de 1 Ohm, para esto existe el MosFet como elemento de disipacion, liberando al Shunt de este trabajo. El amplificador operacional logra copiar la tension del DAC en el terminal superior del Shunt.
 
@@ -26,5 +26,6 @@ Al momento de pensar en este periferico, las opciones eran, fabricar un DAC con 
 El algoritmo me permite recorrer los diversos menus para la configuracion de los valores de corriente, tiempos. Una vez cargado estos valores, al presionar `Iniciar?`, entonces se inicializan las variables y se ejecuta en bucle el modo `Running`, el cual se describe en el siguiente item.
 
 ### Diagrama de Flujo (Modo Running)
-![DiagFlujo](https://github.com/christian-herrera/Arq-Computadores/tree/main/Practica%20Nro%203/Docs/DiagFlujo.svg)
+![DiagFlujo](https://raw.githubusercontent.com/christian-herrera/Arq-Computadores/main/Practica%20Nro%203/docs/DiagFlujo.svg)
+
 La forma de comprobar los milisegundos transcurridos es creando una interrupcion que logre incrementar en 1 una variable global cada 1 milisegundo, para esto utilice el timer de 16 bits y la interrupcion correspondiente al comparar el contador del timer con el valor en el registro OCR. Pasando por cada una de las preguntas del diagrama de flujo se logra llevar a cabo todas las tareas a realizar.
